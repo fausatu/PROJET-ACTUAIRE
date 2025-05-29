@@ -279,6 +279,7 @@
 
             .cards-grid {
                 grid-template-columns: 1fr;
+                margin: 20px;
             }
 
             .programme-levels {
@@ -393,11 +394,18 @@
         }
 
         .question {
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: linear-gradient(135deg, #f8fff8, #ffffff);
-            border-radius: 10px;
-            border-left: 4px solid #00cc66;
+                margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8fff8, #ffffff);
+    border-radius: 10px;
+    border-left: 4px solid #00cc66;
+    width: 500px;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
         }
 
         .question h4 {
