@@ -137,14 +137,18 @@
 
         .cards-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+           
+            grid-template-columns: repeat(2, 300px);
+            justify-content: space-evenly;
             gap: 2rem;
+            align-items: center;
             margin-top: 3rem;
         }
 
         .card {
             background: white;
             padding: 2rem;
+            width: 400px;
             border-radius: 15px;
             box-shadow: 0 8px 25px rgba(0, 102, 204, 0.15);
             transition: all 0.3s ease;
@@ -183,8 +187,8 @@
 
         /* Programme Structure */
         .programme-levels {
-            display: flex;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             flex-wrap: wrap;
             gap: 2rem;
             margin-top: 3rem;
@@ -223,6 +227,7 @@
             padding: 2rem;
             background: linear-gradient(135deg, #00cc66, #0066cc);
             color: white;
+            height: fit-content;
             border-radius: 15px;
             transition: all 0.3s ease;
         }
@@ -291,6 +296,10 @@
             background: linear-gradient(135deg, rgba(0, 102, 204, 0.1), rgba(0, 61, 122, 0.1));
             border: 2px solid #0066cc;
             border-radius: 10px;
+            width: 550px;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
             padding: 2rem;
             margin: 2rem 0;
             text-align: center;
